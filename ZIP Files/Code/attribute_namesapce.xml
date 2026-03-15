@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<?xml-stylesheet type="text/xsl" href="data.xsl"?>
+
+<personData>
+    <user id="1" >
+        <name>Ahmed</name>
+        <age>22</age>
+    </user>
+
+    <user id="2" >
+        <name>Zain</name>
+        <age>21</age>
+    </user>
+
+    <user id="3">
+        <name>Hassan</name>
+        <age>22</age>
+    </user>
+
+    <user id="4">
+        <name>Ahmed</name>
+        <age>22</age>
+    </user>
+</personData>
+
+
+<!-- <personData xmlns:a="https//abc.com" xmlns:b="https//xyz.com">
+
+    <user id="1" >
+    <a:name>Ahmed</a:name>
+    <a:age>22</a:age>
+    </user>
+
+    <user id="2">
+    <a:name>Zain</a:name>
+    <a:age>21</a:age>
+    </user>
+
+    <user id="3" >
+    <b:name>Hassan</b:name>
+    <b:age>22</b:age>
+    </user>
+
+    <user id="4">
+    <b:name>Ahmed</b:name>
+    <b:age>22</b:age>
+    </user>
+
+</personData> -->
+
+
+
+
+
+

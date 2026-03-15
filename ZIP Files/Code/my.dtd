@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE students [
+
+    <!ELEMENT students (student+)>
+
+    <!ELEMENT student (name, age, course+, email?, phone?)>
+
+    <!ATTLIST student id ID #REQUIRED>
+    <!-- <!ATTLIST student id CDATA #REQUIRED> -->
+
+    <!ELEMENT name (#PCDATA)>
+    <!ELEMENT age (#PCDATA)>
+    <!ELEMENT course (#PCDATA)>
+    <!ELEMENT email (#PCDATA)>
+    <!ELEMENT phone (#PCDATA)>
+
+]>
+
+<students>
+
+    <student id="S101">
+        <name>Ali Khan</name>
+        <age>20</age>
+        <course>Web Development</course>
+        <course>UI UX</course>
+        <email>ali@gmail.com</email>
+        <phone>03001234567</phone>
+    </student>
+
+    <student id="S102">
+        <name>Ahmed Raza</name>
+        <age>22</age>
+        <course>Flutter</course>
+        <course>AI</course>
+    </student>
+
+    <student id="S103">
+        <name>Hassan</name>
+        <age>19</age>
+        <course>Database</course>
+        <email>hassan@gmail.com</email>
+    </student>
+
+</students>

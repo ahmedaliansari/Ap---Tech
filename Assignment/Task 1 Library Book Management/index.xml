@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE library SYSTEM "library.dtd">
+<?xml-stylesheet type="text/xsl" href="style.xsl"?>
+
+<library>
+
+  <book id="B1">
+    <title>Rich Dad Poor Dad</title>
+    <author>Robert Kiyosaki</author>
+    <author>Sharon Lechter</author>
+    <year>1997</year>
+    <category>Finance</category>
+    <price>PKR: 750</price>
+  </book>
+
+  <book id="B2">
+    <title>The Alchemist</title>
+    <author>Paulo Coelho</author>
+    <year>1988</year>
+    <category>Fiction</category>
+    <price>PKR: 1750</price>
+  </book>
+
+  <book id="B3">
+    <title>A Brief History of Time</title>
+    <author>Stephen Hawking</author>
+    <author>Leonard Mlodinow</author>
+    <year>1988</year>
+    <category>Science</category>
+    <price>PKR: 2000</price>
+  </book>
+
+  <book id="B4">
+    <title>Atomic Habits</title>
+    <author>James Clear</author>
+    <year>2018</year>
+    <category>Self-Help</category>
+    <price>PKR: 1800</price>
+  </book>
+
+  <book id="B5">
+    <title>Sapiens</title>
+    <author>Yuval Noah Harari</author>
+    <year>2011</year>
+    <category>History</category>
+    <price>PKR: 2200</price>
+  </book>
+
+  <book id="B6">
+    <title>Thinking, Fast and Slow</title>
+    <author>Daniel Kahneman</author>
+    <year>2011</year>
+    <category>Psychology</category>
+    <price>PKR: 2100</price>
+  </book>
+
+  <book id="B7">
+    <title>Good to Great</title>
+    <author>Jim Collins</author>
+    <year>2001</year>
+    <category>Business</category>
+    <price>PKR: 1900</price>
+  </book>
+
+  <book id="B8">
+    <title>The Pragmatic Programmer</title>
+    <author>Andrew Hunt</author>
+    <author>David Thomas</author>
+    <year>1999</year>
+    <category>Programming</category>
+    <price>PKR: 2500</price>
+  </book>
+
+  <book id="B9">
+    <title>Educated</title>
+    <author>Tara Westover</author>
+    <year>2018</year>
+    <category>Memoir</category>
+    <price>PKR: 1800</price>
+  </book>
+
+  <book id="B10">
+    <title>Deep Work</title>
+    <author>Cal Newport</author>
+    <year>2016</year>
+    <category>Self-Help</category>
+    <price>PKR: 2000</price>
+  </book>
+
+</library>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="style.xsl"?>
+
+<Student>
+
+<user id="U123">
+  <name>Ahmed</name>
+  <course>Dism</course>
+  <age>21</age>
+</user>
+
+<user id="U123">
+  <name>Ahmed</name>
+  <course>Dism</course>
+  <age>21</age>
+</user>
+
+<user id="U123">
+  <name>Ansari</name>
+  <course>Dism</course>
+  <age>21</age>
+</user>
+
+</Student>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="student.xsl"?>
+
+<Teacher>
+  <student id="123">
+  <name>ALi</name>
+  <age>10</age>
+  <pass>123</pass>
+  </student>
+
+  <student id="456">
+  <name>Anas</name>
+  <age>8</age>
+  <pass>456</pass>
+  </student>
+
+  <student id="789">
+  <name>Ansari</name>
+  <age>6</age>
+  <pass>789</pass>
+  </student>
+</Teacher>

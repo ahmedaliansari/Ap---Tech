@@ -1,0 +1,11 @@
+<!ELEMENT library (book+)>
+
+<!ELEMENT book (title, author+, year, category?, price)>
+
+<!ELEMENT title (#PCDATA)>
+<!ELEMENT author (#PCDATA)>
+<!ELEMENT year (#PCDATA)>
+<!ELEMENT category (#PCDATA)>
+<!ELEMENT price (#PCDATA)>
+
+<!ATTLIST book id ID #REQUIRED>
