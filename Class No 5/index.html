@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AL - AHMED - STORE</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <style>
+      body {
+        background: #f8f9fa;
+        font-family: "Arial", sans-serif;
+      }
+
+      .card {
+        height: 100%;
+        border-radius: 10px;
+        transition:
+          transform 0.3s,
+          box-shadow 0.3s;
+      }
+
+      .card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+      }
+
+      .card img {
+        height: 200px;
+        object-fit: contain;
+        border-bottom: 1px solid #eaeaea;
+        padding: 15px;
+      }
+
+      .card-title {
+        font-size: 16px;
+        font-weight: bold;
+        height: 40px;
+        overflow: hidden;
+      }
+
+      .card-text {
+        font-size: 13px;
+        height: 60px;
+        overflow: hidden;
+        color: #555;
+      }
+
+      .card-body .d-flex {
+        align-items: center;
+        justify-content: space-between;
+      }
+
+      .badge {
+        font-size: 0.95rem;
+        padding: 0.4em 0.6em;
+      }
+
+      .btn-primary {
+        background-color: #0d6efd;
+        border: none;
+        font-weight: 500;
+        transition:
+          background-color 0.3s,
+          transform 0.2s;
+      }
+
+      .btn-primary:hover {
+        background-color: #0b5ed7;
+        transform: translateY(-2px);
+      }
+
+      .product-card {
+        position: relative;
+        overflow: hidden;
+        transition:
+          transform 0.3s,
+          box-shadow 0.3s;
+      }
+
+      .product-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+      }
+
+      .add-to-cart-btn {
+        opacity: 0;
+        transform: translateY(20px);
+        transition:
+          opacity 0.5s ease,
+          transform 0.5s ease;
+      }
+
+      .product-card:hover .add-to-cart-btn {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <nav
+        class="navbar navbar-expand-lg navbar-light bg-light mt-3 rounded shadow-sm"
+      >
+        <div class="container-fluid d-flex align-items-center">
+          <a class="navbar-brand fw-bold" href="#">AL - AHMED - STORE</a>
+
+          <ul class="navbar-nav mx-auto d-flex flex-row">
+            <li class="nav-item px-2">
+              <a class="nav-link active" href="#">Home</a>
+            </li>
+            <li class="nav-item px-2">
+              <a class="nav-link" href="#">About</a>
+            </li>
+            <li class="nav-item px-2">
+              <a class="nav-link" href="#">Services</a>
+            </li>
+            <li class="nav-item px-2">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+          </ul>
+
+          <form class="d-flex">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+            />
+            <button class="btn btn-success">Search</button>
+          </form>
+        </div>
+      </nav>
+
+      <div class="row mt-4" id="product_data"></div>
+    </div>
+
+    <script>
+      fetch("https://fakestoreapi.com/products/")
+        .then((response) => response.json())
+        .then((data) => {
+          data.forEach((item) => {
+            product_data.innerHTML += `
+
+           <div class="col-md-3 mb-4">
+                <div class="card shadow-sm p-2 product-card">
+                    <img src="${item.image}" class="card-img-top" alt="Not Found">
+
+                    <div class="card-body">
+                    <h5 class="card-title">${item.title}</h5>
+                    <p class="card-text">${item.description}</p>
+
+                    <div class="d-flex justify-content-between align-items-center mb-2">
+                        <span class="badge bg-success fs-6">$${item.price}</span>
+                        <div>
+                        <small class="text-warning me-2">⭐ ${item.rating.rate}</small>
+                        <small class="text-muted">🛒 ${item.rating.count}</small>
+                        </div>
+                    </div>
+
+                    <button class="btn btn-primary w-100 add-to-cart-btn">
+                        <i class="fas fa-shopping-cart me-2"></i> Add to Cart
+                    </button>
+                    </div>
+                </div>
+                </div>
+
+            `;
+          });
+        });
+    </script>
+  </body>
+</html>
