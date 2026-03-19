@@ -1,0 +1,82 @@
+[
+  {
+    "id": "1",
+    "name": "Masjid al-Haram",
+    "city": "Makkah",
+    "country": "Saudi Arabia",
+    "best_season": "Ramadan",
+    "rating": "5.0"
+  },
+  {
+    "id": "2",
+    "name": "Masjid an-Nabawi",
+    "city": "Madinah",
+    "country": "Saudi Arabia",
+    "best_season": "Rabi-ul-Awwal",
+    "rating": "5.0"
+  },
+  {
+    "id": "3",
+    "name": "Masjid Al-Aqsa",
+    "city": "Jerusalem",
+    "country": "Palestine",
+    "best_season": "All Year",
+    "rating": "4.9"
+  },
+  {
+    "id": "4",
+    "name": "Badshahi Mosque",
+    "city": "Lahore",
+    "country": "Pakistan",
+    "best_season": "Winter",
+    "rating": "4.8"
+  },
+  {
+    "id": "5",
+    "name": "Faisal Mosque",
+    "city": "Islamabad",
+    "country": "Pakistan",
+    "best_season": "Spring",
+    "rating": "4.7"
+  },
+  {
+    "id": "6",
+    "name": "Sultan Ahmed Mosque (Blue Mosque)",
+    "city": "Istanbul",
+    "country": "Turkey",
+    "best_season": "Spring",
+    "rating": "4.8"
+  },
+  {
+    "id": "7",
+    "name": "Hassan II Mosque",
+    "city": "Casablanca",
+    "country": "Morocco",
+    "best_season": "Summer",
+    "rating": "4.7"
+  },
+  {
+    "id": "8",
+    "name": "Umayyad Mosque",
+    "city": "Damascus",
+    "country": "Syria",
+    "best_season": "Autumn",
+    "rating": "4.6"
+  },
+  {
+    "id": "9",
+    "name": "Sheikh Zayed Grand Mosque",
+    "city": "Abu Dhabi",
+    "country": "UAE",
+    "best_season": "Winter",
+    "rating": "4.9"
+  },
+  {
+    "id": "10",
+    "name": "Quba Mosque",
+    "city": "Madinah",
+    "country": "Saudi Arabia",
+    "best_season": "All Year",
+    "rating": "4.8"
+  }
+]
