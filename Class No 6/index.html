@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Student Grade System</h1>
+    <h3 id="data"></h3>
+
+    <script>
+      var user_name = prompt("Write Your Name");
+      var user_marks = prompt("Write Your Result Marks Out Of 100");
+
+      if (user_marks >= 90 && user_marks <= 100) {
+        data.innerHTML = `Hello ${user_name}, Your Grade Is A+ ${user_marks} `;
+      }
+
+      else if (user_marks >= 80 && user_marks <= 89) {
+        data.innerHTML = `Hello ${user_name}, Your Grade Is A ${user_marks} `;
+      }
+
+      else if (user_marks >= 70 && user_marks <= 79) {
+        data.innerHTML = `Hello ${user_name}, Your Grade Is B ${user_marks} `;
+      }
+
+      else if (user_marks >= 60 && user_marks <= 69) {
+        data.innerHTML = `Hello ${user_name}, Your Grade Is C ${user_marks} `;
+      }
+
+      else if (user_marks >= 50 && user_marks <= 59) {
+        data.innerHTML = `Hello ${user_name}, Your Grade Is D ${user_marks} `;
+      }
+
+      else{
+        data.innerHTML = `Oop's ${user_name}, Your Are Failed ${user_marks} `;
+      }
+
+    </script>
+  </body>
+</html>
