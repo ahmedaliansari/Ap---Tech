@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Functions</h1>
+    <h3>Call Back & Arrow Functions</h3>
+
+    <script>
+      // Simple Call Back Function
+      function func1(name, nextfunc) {
+        console.log("Hello, " + name);
+        nextfunc();
+      }
+
+      function func2() {
+        console.log("Call Back Function 1");
+      }
+
+      func1("Ahmed", func2);
+
+      // Call Back With Arrow Function
+      function func3(name, nextfunc) {
+        console.log("Hello, " + name);
+        nextfunc();
+      }
+
+      func3("Ahmed", () => {
+        console.log("Call Back Function 2");
+      });
+
+      // Call Back + Arrow Function + setTimeout
+      function func4(name, nextfunc) {
+        setTimeout(() => {
+          console.log("Hello, " + name);
+          nextfunc();
+        }, 3000);
+      }
+
+      func4("Ahmed", () => {
+        console.log("Call Back Function 3");
+      });
+    </script>
+  </body>
+</html>
