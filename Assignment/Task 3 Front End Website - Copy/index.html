@@ -1,0 +1,221 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Premium Auth UI</title>
+
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap");
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Poppins", sans-serif;
+      }
+
+      body {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        /* 💎 Premium background */
+        background: radial-gradient(circle at top, #1e293b, #0b1220);
+      }
+
+      /* MAIN CARD */
+      .container {
+        width: 850px;
+        height: 520px;
+        background: rgba(255, 255, 255, 0.06);
+        backdrop-filter: blur(20px);
+        border-radius: 22px;
+        overflow: hidden;
+        position: relative;
+        box-shadow: 0 25px 70px rgba(0, 0, 0, 0.7);
+        border: 1px solid rgba(255, 255, 255, 0.08);
+      }
+
+      /* FORM */
+      .form-box {
+        position: absolute;
+        width: 50%;
+        height: 100%;
+        padding: 60px 45px;
+        transition: 0.7s ease;
+        color: #fff;
+      }
+
+      h2 {
+        font-size: 28px;
+        margin-bottom: 10px;
+      }
+
+      p {
+        font-size: 13px;
+        opacity: 0.75;
+        margin-bottom: 20px;
+      }
+
+      /* INPUT */
+      input {
+        width: 100%;
+        padding: 13px;
+        margin: 10px 0;
+        border: none;
+        border-radius: 12px;
+        outline: none;
+
+        /* 💎 soft glass input */
+        background: rgba(255, 255, 255, 0.08);
+        color: #fff;
+        transition: 0.3s;
+      }
+
+      input:focus {
+        background: rgba(255, 255, 255, 0.14);
+        transform: scale(1.02);
+      }
+
+      input::placeholder {
+        color: #b0b8c5;
+      }
+
+      /* BUTTON */
+      button {
+        width: 100%;
+        padding: 13px;
+        margin-top: 10px;
+        border: none;
+        border-radius: 12px;
+        cursor: pointer;
+        font-weight: 600;
+        color: #fff;
+
+        /* 💎 Premium gradient */
+        background: linear-gradient(135deg, #6366f1, #22d3ee);
+        transition: 0.3s;
+      }
+
+      button:hover {
+        transform: scale(1.05);
+        box-shadow: 0 10px 25px rgba(99, 102, 241, 0.4);
+      }
+
+      /* LOGIN */
+      .login {
+        left: 0;
+      }
+
+      /* REGISTER */
+      .register {
+        left: 0;
+        opacity: 0;
+        pointer-events: none;
+      }
+
+      /* OVERLAY */
+      .overlay {
+        position: absolute;
+        right: 0;
+        width: 50%;
+        height: 100%;
+
+        /* 💎 Smooth premium gradient */
+        background: linear-gradient(135deg, #6366f1, #8b5cf6, #22d3ee);
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 30px;
+        transition: 0.7s ease;
+        color: #fff;
+      }
+
+      .overlay h2 {
+        font-size: 26px;
+      }
+
+      .overlay p {
+        opacity: 0.9;
+      }
+
+      .overlay button {
+        margin-top: 20px;
+        background: #fff;
+        color: #4f46e5;
+      }
+
+      /* ACTIVE */
+      .container.active .overlay {
+        right: 50%;
+      }
+
+      .container.active .login {
+        transform: translateX(100%);
+        opacity: 0;
+      }
+
+      .container.active .register {
+        transform: translateX(100%);
+        opacity: 1;
+        pointer-events: auto;
+      }
+
+      /* RESPONSIVE */
+      @media (max-width: 900px) {
+        .container {
+          width: 95%;
+          height: 600px;
+        }
+
+        .form-box {
+          width: 100%;
+        }
+
+        .overlay {
+          display: none;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container" id="container">
+      <div class="form-box login">
+        <h2>Welcome Back</h2>
+        <p>Login to continue</p>
+        <input type="email" placeholder="Email" />
+        <input type="password" placeholder="Password" />
+        <button>Login</button>
+      </div>
+
+      <div class="form-box register">
+        <h2>Create Account</h2>
+        <p>Join our platform</p>
+        <input type="text" placeholder="Full Name" />
+        <input type="email" placeholder="Email" />
+        <input type="password" placeholder="Password" />
+        <button>Register</button>
+      </div>
+
+      <div class="overlay">
+        <div>
+          <h2>Unlock Your Account</h2>
+          <p>Login to continue your work or register to get started</p>
+          <button
+            onclick="
+              document.getElementById('container').classList.toggle('active')
+            "
+          >
+            Switch
+          </button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

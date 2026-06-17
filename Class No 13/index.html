@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Java Script Functions</h1>
+    <h3>Session Storage Save, Fetch & Delete</h3>
+
+    <input type="text" id="u_name" placeholder="Enter Your Name" />
+
+    <button onclick="user_registration()">Submit</button>
+
+    <script>
+      function user_registration() {
+        var u_name = document.getElementById("u_name").value;
+
+        if (u_name === "") {
+          alert("All Field Are Required");
+        } 
+        
+        else {
+          sessionStorage.setItem("name", u_name);
+        } 
+      }
+    </script>
+  </body>
+</html>

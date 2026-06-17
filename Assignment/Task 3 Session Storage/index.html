@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Profile Website By Ahmed</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="card">
+  <div class="title">Create Profile</div>
+
+  <div class="progress">
+    <div class="circle active" id="c1">1</div>
+    <div class="circle" id="c2">2</div>
+    <div class="circle" id="c3">3</div>
+  </div>
+
+  <div class="step active" id="step1">
+    <label>Your Name</label>
+    <input type="text" id="name" placeholder="Enter full name">
+    <div class="error" id="error1"></div>
+    <button onclick="next1()">Continue</button>
+  </div>
+
+  <div class="step" id="step2">
+    <label>Your Age</label>
+    <input type="number" id="age" placeholder="Enter age">
+    <div class="error" id="error2"></div>
+    <button onclick="next2()">Continue</button>
+  </div>
+
+  <div class="step" id="step3">
+    <label>Your City</label>
+    <input type="text" id="city" placeholder="Enter city">
+    <div class="error" id="error3"></div>
+    <button onclick="submitForm()">Submit</button>
+  </div>
+
+  <div class="step" id="result">
+    <h3>🎉 Profile Created</h3>
+    <p id="output"></p>
+  </div>
+
+</div>
+
+<script src="app.js"></script>
+
+</body>
+</html>

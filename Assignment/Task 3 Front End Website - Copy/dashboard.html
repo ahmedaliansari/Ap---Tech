@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="dashboard">
+
+  <!-- Sidebar -->
+  <div class="sidebar">
+    <h3>MyApp</h3>
+    <a href="#">Dashboard</a>
+    <a href="#">Users</a>
+    <a href="#">Settings</a>
+    <a href="#" onclick="logout()">Logout</a>
+  </div>
+
+  <!-- Main -->
+  <div class="main">
+
+    <div class="topbar">
+      <h3>Dashboard</h3>
+    </div>
+
+    <div class="card-box">
+      <h2>Welcome 👋</h2>
+      <p>This is your professional dashboard</p>
+    </div>
+
+  </div>
+
+</div>
+
+<script>
+function logout(){
+  window.location.href = "login.html";
+}
+</script>
+
+</body>
+</html>

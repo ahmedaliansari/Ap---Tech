@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+* {
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:'Poppins', sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #4f46e5, #9333ea);
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  height:100vh;
+}
+
+/* MAIN CONTAINER */
+.container {
+  background:#fff;
+  border-radius:20px;
+  box-shadow:0 20px 40px rgba(0,0,0,0.2);
+  position:relative;
+  overflow:hidden;
+  width:900px;
+  max-width:100%;
+  min-height:550px;
+}
+
+/* FORMS */
+.form-container {
+  position:absolute;
+  top:0;
+  height:100%;
+  width:50%;
+  transition: all 0.6s ease-in-out;
+}
+
+.sign-in {
+  left:0;
+  z-index:2;
+}
+
+.sign-up {
+  left:0;
+  opacity:0;
+  z-index:1;
+}
+
+/* ACTIVE STATE (REGISTER SHOW) */
+.container.active .sign-up {
+  transform:translateX(100%);
+  opacity:1;
+  z-index:5;
+}
+
+.container.active .sign-in {
+  transform:translateX(100%);
+}
+
+/* FORM STYLE */
+form {
+  background:#fff;
+  display:flex;
+  flex-direction:column;
+  padding:40px;
+  height:100%;
+  justify-content:center;
+}
+
+input {
+  margin:10px 0;
+  padding:12px;
+  border-radius:8px;
+  border:1px solid #ddd;
+}
+
+button {
+  margin-top:10px;
+  padding:12px;
+  background:#4f46e5;
+  color:#fff;
+  border:none;
+  border-radius:8px;
+  cursor:pointer;
+}
+
+button.ghost {
+  background:transparent;
+  border:1px solid #fff;
+}
+
+/* OVERLAY */
+.overlay-container {
+  position:absolute;
+  top:0;
+  left:50%;
+  width:50%;
+  height:100%;
+  overflow:hidden;
+  transition: transform 0.6s ease-in-out;
+}
+
+.overlay {
+  background: linear-gradient(135deg, #4f46e5, #9333ea);
+  color:#fff;
+  position:relative;
+  left:-100%;
+  height:100%;
+  width:200%;
+  transform:translateX(0);
+  transition: transform 0.6s ease-in-out;
+}
+
+/* MOVE OVERLAY */
+.container.active .overlay-container{
+  transform:translateX(-100%);
+}
+
+.container.active .overlay{
+  transform:translateX(50%);
+}
+
+/* PANELS */
+.overlay-panel {
+  position: absolute;
+  width: 450%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0 40px; /* FIX: spacing added */
+}
+
+.overlay-panel.left {
+  transform:translateX(-20%);
+}
+
+.overlay-panel.right {
+  right:0;
+}
+
+/* RESPONSIVE */
+@media(max-width:768px){
+  .container{
+    width:100%;
+    height:100vh;
+    border-radius:0;
+  }
+}
